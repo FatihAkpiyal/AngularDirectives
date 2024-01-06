@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
   <input type="text" [value]="title">
   <app-home [pageName]="title"></app-home>  -->
     <ul>
-      <li *ngFor="let name of names" >{{name}}</li>
+      <li *ngFor="let name of names;index as s" >{{name}} - {{s+1}}</li>
     </ul>
 
 
