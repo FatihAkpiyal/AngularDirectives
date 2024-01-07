@@ -6,9 +6,13 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
+  template:`
+    <h1 *appExample="true"> hello</h1>
+  `,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'CustomDirectives';
+
+
 }
